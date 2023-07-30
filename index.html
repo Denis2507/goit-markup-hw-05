@@ -417,40 +417,60 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <div>
-          <form class="form" name="issue_report_form" autocomplete="off">
-            <div class="form-input">
-              <label class="form-label">
-                Name
-                <input class="form-contact" type="text" name="name" />
-              </label>
-              <label class="form-label">
-                Phone
-                <input class="form-contact" type="tel" name="phone" />
-              </label>
-              <label class="form-label">
-                Email
-                <input class="form-contact" type="email" name="email" />
-              </label>
-              <label class="form-label">
-                Comment
+        <form class="form" name="issue_report_form" autocomplete="off">
+          <div class="form-form">
+            <label class="form-label" for="user-name">
+              Name
+              <div class="form-input">
+                <input
+                  class="form-contact"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                />
+              </div>
+            </label>
+            <label class="form-label" for="user-name">
+              Phone
+              <div class="form-input">
+                <input
+                  class="form-contact"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                />
+              </div>
+            </label>
+            <label class="form-label" for="user-name">
+              Email
+              <div class="form-input">
+                <input
+                  class="form-contact"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                />
+              </div>
+            </label>
+            <label class="form-label" for="user-name">
+              Comment
+              <div class="form-input">
                 <input
                   class="form-contact-comment"
+                  id="user-name"
                   type="text"
                   name="comment"
                   placeholder="Text input"
                 />
-              </label>
-            </div>
+              </div>
+            </label>
             <label class="form-contact-checkbox">
               <input type="checkbox" name="checkbox" value="accept" />I accept
               the terms and conditions of the Privacy Policy
             </label>
-            <label class="form-contact-btn">
-              <button class="form-btn" type="submit" name="btn">Send</button>
-            </label>
-          </form>
-        </div>
+            <button class="form-btn" type="submit" name="btn">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
