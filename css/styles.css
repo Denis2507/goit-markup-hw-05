@@ -6,6 +6,7 @@
     --color-white: #FFF;
     --port-img-text: #f4f4fd;
     --fill-icon: #f4f4fd;
+    --cheked: #404bbf;
 }
 
 .link {
@@ -893,7 +894,11 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus .form-icons {
+.form-input:focus {
+    fill: #4D5AE5;
+}
+
+.form-icons:focus {
     fill: #4D5AE5;
 }
 
@@ -932,6 +937,10 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-contact-comment:focus {
+    border-color: #4D5AE5;
+}
+
 .form-form-checkbox {
     margin-bottom: 24px;
 }
@@ -941,6 +950,12 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--custom-icon);
+}
+
+.form-input-checkbox:checked .form-checkbox-icon {
+    background-color: var(--cheked);
+    border: none;
+    fill: var(--fill-icon);
 }
 
 .form-text-link {
@@ -961,6 +976,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .form-btn {
@@ -977,6 +993,7 @@ img {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
